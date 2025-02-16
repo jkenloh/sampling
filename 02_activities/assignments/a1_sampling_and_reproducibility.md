@@ -12,7 +12,6 @@ Alter the code so that it is reproducible. Describe the changes you made to the 
 
 # Author: Jingkenh (Ken) Loh
 
-```
 ## Stages of sampling:
 
 ### 1. Infect a random subset of people
@@ -68,8 +67,6 @@ The reproducibility of the results are poor when the number of repetitions in th
 I altered the code by adding a seed using *np.random.seed(m)* inside the function. This would make it produce the exact same output each time the script is run, which means it is completely reproducible. 
 
 I used *np.random.seed(m)* inside the function instead of specifying a seed number as the function is being run 100 times in a range of 0-99 for m (*[simulate_event(m) for m in range(100)]*), which means it will just run the seed with the same number as the simulation. If a seed number is specified, each individual simulation would be exactly the same, and a histogram would not be produced.
-
-```
 
 
 ## Criteria
